@@ -62,6 +62,10 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs2        u:object_r:vendor_efs_boot_dev:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs3        u:object_r:vendor_efs_boot_dev:s0
 
+
+# Modem
+/vendor/bin/ks                                                          u:object_r:ks_exec:s0
+
 # NFC
 /(odm|vendor/odm)/bin/hw/android\.hardware\.nfc@1\.2-service          u:object_r:hal_nfc_default_exec:s0
 /(odm|vendor/odm)/bin/hw/vendor\.nxp\.hardware\.nfc@1\.2-service      u:object_r:hal_nfc_default_exec:s0
