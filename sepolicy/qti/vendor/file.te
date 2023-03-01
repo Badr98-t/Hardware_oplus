@@ -51,3 +51,6 @@ type vendor_proc_oplus_ufs, fs_type, proc_type;
 
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
+
+# mdm_helper
+type mdm_tombstone_data_file, data_file_type, file_type;
