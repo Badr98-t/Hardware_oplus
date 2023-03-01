@@ -11,6 +11,10 @@ allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file create_file_perms;
 
 allow vendor_mdm_helper vendor_sysfs_soc_sensitive:file r_file_perms;
 
+# Allow MDM helper to create vendor_tombstone_data_file
+allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file rw_file_perms;
+allow vendor_mdm_helper vendor_tombstone_data_file:file rw_file_perms;
+
 # Needed to allow boot over PCIe
 allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
 
@@ -42,3 +46,9 @@ allow vendor_mdm_helper ks_exec:file execute_no_trans;
 
 # Needed by ks in order to access the efs sync partitions
 allow vendor_mdm_helper efs_boot_device:blk_file rw_file_perms;
+
+# Allow mdmhelper (kickstart) to use SDX55M tombstones
+allow vendor_mdm_helper mdm_tombstone_data_file:dir create_dir_perms;
+allow vendor_mdm_helper mdm_tombstone_data_file:dir rw_dir_perms;
+allow vendor_mdm_helper mdm_tombstone_data_file:file create_file_perms;
+allow vendor_mdm_helper mdm_tombstone_data_file:file rw_file_perms;

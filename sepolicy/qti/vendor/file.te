@@ -61,3 +61,5 @@ type sysfs_workqueue, fs_type, sysfs_type;
 # Sync
 type sysfs_sync, fs_type, sysfs_type;
 
+# mdm_helper
+type mdm_tombstone_data_file, data_file_type, file_type;
