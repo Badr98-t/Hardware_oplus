@@ -58,6 +58,10 @@
 /data/vendor/tombstones/SDX55M(/.*)?           u:object_r:mdm_tombstone_data_file:s0
 
 
+# SDX55M tombstones
+/data/vendor/tombstones/SDX55M(/.*)?           u:object_r:mdm_tombstone_data_file:s0
+
+
 # Modem-mdm_helper
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs[1-3]          u:object_r:efs_boot_device:s0
 /dev/block/bootdevice/by-name/mdm1m9kefs[1-3]                           u:object_r:efs_boot_device:s0
