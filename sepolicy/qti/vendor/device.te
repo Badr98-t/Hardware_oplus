@@ -21,3 +21,7 @@ type aac_richtap_dev_device, dev_type;
 
 # Wlchgmonitor
 type wlchg_device, dev_type;
+
+# boot
+type efs_boot_device, dev_type;
+
