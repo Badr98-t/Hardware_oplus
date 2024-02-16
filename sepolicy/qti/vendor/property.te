@@ -7,5 +7,8 @@ vendor_internal_prop(vendor_modem_prop)
 # RIL
 vendor_internal_prop(vendor_nw_exported_system_prop)
 
+# Touch
+vendor_internal_prop(vendor_oplus_touch_prop)
+
 # WCNSS
 vendor_internal_prop(vendor_vold_prop)

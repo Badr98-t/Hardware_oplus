@@ -24,6 +24,9 @@ type vendor_proc_engineer, fs_type, proc_type;
 type vendor_persist_fingerprint_file, file_type;
 type vendor_proc_fingerprint, fs_type, proc_type;
 
+# Input
+type proc_bus_input, fs_type, proc_type;
+
 # Sensors
 type vendor_proc_eng_cali_file, fs_type, proc_type;
 type vendor_proc_oplus_als_file, fs_type, proc_type;
@@ -34,6 +37,11 @@ type vendor_proc_tee_bind_core, fs_type, proc_type;
 
 # TOF
 type vendor_sysfs_tof, fs_type, sysfs_type;
+
+# Touch
+type oplus_touchdaemon_socket, file_type;
+type vendor_persist_oplus_touch_file, file_type, data_file_type;
+type vendor_proc_oplus_touch, fs_type, proc_type;
 
 # Ultrasound
 type vendor_proc_ultrasound, fs_type, proc_type;
