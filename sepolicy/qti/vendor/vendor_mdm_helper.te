@@ -1,6 +1,3 @@
-typeattribute vendor_mdm_helper mlstrustedsubject;
-
-init_daemon_domain(vendor_mdm_helper)
 
 # Allow MDM helper to read SSR property
 get_prop(vendor_mdm_helper, vendor_ssr_prop)
