@@ -18,3 +18,36 @@ allow system_app vendor_sysfs_battery_supply:dir search;
 allow system_app vendor_sysfs_battery_supply:file r_file_perms;
 allow system_app sysfs_zram:dir { search };
 allow system_app proc_pagetypeinfo:file { read };
+
+rw_dir_file(system_app, vendor_sysfs_usb_supply)
+
+
+allow system_app proc_pagetypeinfo:file { open };
+allow system_app hal_health_default:binder { call };
+allow system_app hal_nfc_default:binder { call };
+allow system_app hal_power_default:binder { call };
+allow system_app hal_sensors_default:binder { call };
+allow system_app hal_vibrator_default:binder { call };
+allow system_app hal_wifi_default:binder { call };
+allow system_app hal_wifi_supplicant_default:binder { call };
+#allow system_app system_suspend_control_service:service_manager { find };
+#allow system_app system_suspend_control_internal_service:service_manager { find };
+#allow system_app tracingproxy_service:service_manager { find };
+
+
+allow system_app vendor_proc_display:dir r_dir_perms;
+allow system_app vendor_proc_display:file rw_file_perms;
+allow system_app vendor_sysfs_graphics:dir r_dir_perms;
+allow system_app vendor_sysfs_graphics:file rw_file_perms;
+
+allow system_app sysfs_dm:dir search;
+allow system_app sysfs_dm:file rw_file_perms;
+
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_vibrator:dir r_dir_perms;
+allow system_app sysfs_vibrator:file rw_file_perms;
+allow system_app vendor_sysfs_kgsl:dir r_dir_perms;
+allow system_app vendor_sysfs_kgsl:file rw_file_perms;
+allow system_app vendor_sysfs_kgsl:lnk_file rw_file_perms;
+allow system_app vendor_sysfs_usb_supply:dir r_dir_perms;
+allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
