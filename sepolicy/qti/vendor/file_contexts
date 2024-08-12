@@ -168,3 +168,12 @@
 /sys/module/msm_performance/parameters/touchboost                                         u:object_r:vendor_sysfs_msm_perf:s0
 /sys/module/sync/parameters/fsync_enabled                                                 u:object_r:sysfs_sync:s0
 /sys/module/workqueue/parameters/power_efficient                                          u:object_r:sysfs_workqueue:s0
+/sys/kernel/oplus_display/hbm                                                             u:object_r:sysfs_dm:s0
+/sys/class/oplus_chg/battery/fast_charge                                                  u:object_r:vendor_sysfs_usb_supply:s0
+
+
+# Proc files
+/proc/touchpanel/game_switch_enable           u:object_r:vendor_proc_display:s0
+/proc/oplus_rf/rf_cable                       u:object_r:proc_rild:s0
+/proc/touchpanel/oplus_tp_limit_enable        u:object_r:vendor_proc_display:s0
+
