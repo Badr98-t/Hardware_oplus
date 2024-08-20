@@ -52,3 +52,11 @@ allow system_app vendor_sysfs_kgsl:lnk_file rw_file_perms;
 allow system_app vendor_sysfs_usb_supply:dir r_dir_perms;
 allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
 allow system_app vendor_sysfs_dc_dim:file { getattr  open  read  write };
+
+
+# HBM
+type sysfs_dsi_display_primary;
+allow system_app vendor_sysfs_graphics:file write;
+allow system_app vendor_sysfs_graphics:file setattr;
+allow system_app sysfs_dsi_display_primary:dir search;
+allow system_app sysfs_dsi_display_primary:file write;
