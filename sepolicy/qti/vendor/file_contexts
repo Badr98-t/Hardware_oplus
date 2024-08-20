@@ -192,6 +192,6 @@
 
 # Proc files
 /proc/touchpanel/game_switch_enable           u:object_r:vendor_proc_display:s0
-/proc/oplus_rf/rf_cable                       u:object_r:proc_rild:s0
+#/proc/oplus_rf/rf_cable                       u:object_r:proc_rild:s0
 /proc/touchpanel/oplus_tp_limit_enable        u:object_r:vendor_proc_display:s0
 
