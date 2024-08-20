@@ -1,0 +1,2 @@
+allow mediaserver vendor_display_prop:file { read };
+allow mediaserver vendor_display_prop:file { getattr  map  open };

@@ -51,3 +51,4 @@ allow system_app vendor_sysfs_kgsl:file rw_file_perms;
 allow system_app vendor_sysfs_kgsl:lnk_file rw_file_perms;
 allow system_app vendor_sysfs_usb_supply:dir r_dir_perms;
 allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
+allow system_app vendor_sysfs_dc_dim:file { getattr  open  read  write };
