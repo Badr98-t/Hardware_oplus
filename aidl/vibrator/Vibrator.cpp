@@ -68,6 +68,7 @@ namespace vibrator {
 #define MSM_CPU_TARO            457
 #define MSM_CPU_TARO_LTE        552
 #define MSM_CPU_KALAMA          519
+#define MSM_CPU_PINEAPPLE       557
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
@@ -158,6 +159,7 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_CAPE:
             case APQ_CPU_CAPE:
             case MSM_CPU_KALAMA:
+            case MSM_CPU_PINEAPPLE:
                 mSupportExternalControl = true;
                 break;
             default:
