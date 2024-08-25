@@ -1,0 +1,9 @@
+allow untrusted_app_32 apex_info_file:file { getattr };
+allow untrusted_app_32 apk_data_file:file { setattr };
+allow untrusted_app_32 build_attestation_prop:file { read };
+#allow untrusted_app_32 odsign_prop:file { read };
+allow untrusted_app_32 proc_loadavg:file { read };
+allow untrusted_app_32 serialno_prop:file { read };
+allow untrusted_app_32 userdebug_or_eng_prop:file { read };
+allow untrusted_app_32 wifi_hal_prop:file { read };
+

@@ -1,0 +1,3 @@
+allow cameraserver vendor_display_prop:file { open };
+allow cameraserver vendor_display_prop:file { read };
+
