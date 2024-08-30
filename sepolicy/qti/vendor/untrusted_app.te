@@ -1,0 +1,4 @@
+allow untrusted_app debugfs_trace_marker:file { getattr };
+allow untrusted_app selinuxfs:file { read };
+allow untrusted_app system_lib_file:file { execmod };
+allow untrusted_app zygote_tmpfs:file { execute };

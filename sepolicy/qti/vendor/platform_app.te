@@ -10,3 +10,4 @@ allow platform_app vendor_file:file { read };
 allow platform_app selinuxfs:file { read };
 allow platform_app vendor_file:file { read };
 
+allow platform_app sysfs_zram:dir { search };
