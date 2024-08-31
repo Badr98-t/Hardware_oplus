@@ -7,3 +7,13 @@ allow untrusted_app_32 serialno_prop:file { read };
 allow untrusted_app_32 userdebug_or_eng_prop:file { read };
 allow untrusted_app_32 wifi_hal_prop:file { read };
 
+
+allow untrusted_app_32 boottime_prop:file { read };
+allow untrusted_app_32 build_bootimage_prop:file { read };
+allow untrusted_app_32 init_svc_debug_prop:file { read };
+allow untrusted_app_32 llkd_prop:file { read };
+allow untrusted_app_32 proc_max_map_count:file { read };
+allow untrusted_app_32 proc_net_tcp_udp:file { read };
+allow untrusted_app_32 selinuxfs:file { read };
+allow untrusted_app_32 serialno_prop:file { open };
+

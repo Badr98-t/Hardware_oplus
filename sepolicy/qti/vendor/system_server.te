@@ -7,3 +7,5 @@ allow system_server vendor_sysfs_usb_supply:file r_file_perms;
 r_dir_file(system_server, vendor_proc_display)
 
 allow system_server binderfs_logs:dir { search };
+
+allow system_server system_server:capability { sys_module };
